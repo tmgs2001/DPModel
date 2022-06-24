@@ -7,6 +7,7 @@ package com.company.factorys.section2;
  */
 public class ConcreteCreator extends Creator {
 	
+	@Override
 	public <T extends Product> T createProduct(Class<T> c){
 		Product product=null;
 		try {
@@ -14,7 +15,7 @@ public class ConcreteCreator extends Creator {
 		} catch (Exception e) {
 			//异常处理
 		}		
-		return (T)product;		
+		return (T)product;
 	}
 
 }

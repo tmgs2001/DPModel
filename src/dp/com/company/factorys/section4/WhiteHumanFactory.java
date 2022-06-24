@@ -6,6 +6,7 @@ package com.company.factorys.section4;
  */
 public class WhiteHumanFactory extends AbstractHumanFactory {
 
+	@Override
 	public Human createHuman() {
 		return new YellowHuman();
 	}

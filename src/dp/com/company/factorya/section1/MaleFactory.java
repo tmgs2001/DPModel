@@ -17,7 +17,8 @@ public class MaleFactory implements HumanFactory {
 	}
 
 	//生产出黄人男性
-	public Human createYellowHuman() {
+	@Override
+  public Human createYellowHuman() {
 		return new MaleYellowHuman();
 	}
 

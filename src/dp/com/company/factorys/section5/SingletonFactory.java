@@ -8,7 +8,7 @@ import java.lang.reflect.Constructor;
  */
 public class SingletonFactory {
 	private static Singleton singleton;
-	static{ 
+	static{
 		try {
 			Class<?> cl= Class.forName(Singleton.class.getName());
 			//获得无参构造
@@ -19,10 +19,10 @@ public class SingletonFactory {
 			singleton = (Singleton)constructor.newInstance();
 		} catch (Exception e) {
 			//异常处理
-		}		
+		}
 	}
 	
 	public static Singleton getSingleton(){
-		return singleton;	
+		return singleton;
 	}
 }

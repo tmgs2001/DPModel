@@ -7,7 +7,8 @@ package com.company.factorya.section1;
 public class FemaleYellowHuman extends AbstractYellowHuman {
 
 	//黄人女性
-	public void getSex() {
+	@Override
+  public void getSex() {
 		System.out.println("黄人女性");
 	}
 

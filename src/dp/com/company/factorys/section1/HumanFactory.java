@@ -13,13 +13,15 @@ package com.company.factorys.section1;
  */
 public class HumanFactory extends AbstractHumanFactory {
 	
-	@SuppressWarnings("unchecked")
+	@Override
+  @SuppressWarnings("unchecked")
 	public <T extends Human> T createHuman(Class<T> c){
 		//定义一个生产的人种
-		Human human=null;  	
+		Human human=null;
 		try {
 			 //产生一个人种
-			human = (Human)Class.forName(c.getName()).newInstance();  			
+//			human = (Human)Class.forName(c.getName()).newInstance();
+			human = c.newInstance();
 		} catch (Exception e) {
 			System.out.println("人种生成错误！");
 		}
