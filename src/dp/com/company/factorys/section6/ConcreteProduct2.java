@@ -6,6 +6,7 @@ package com.company.factorys.section6;
  */
 public class ConcreteProduct2 extends Product {
 
+	@Override
 	public void doSomething() {
 		//逻辑处理
 	}
